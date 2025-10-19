@@ -33,7 +33,7 @@ export async function POST(req: NextRequest) {
     try {
         const completion = await openai.chat.completions.create({
             // model: 'openai/gpt-4.1-mini',
-            model: 'deepseek/deepseek-chat-v3.1:free',
+            model: 'mistralai/mistral-7b-instruct:free',
             response_format:{ type: 'json_object' },
             messages: [ 
                 {
